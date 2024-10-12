@@ -761,7 +761,7 @@ strong {
   DONATE              
 -----------------------------------------*/
 .donate-section {
-  background-image: url('/images/BancoSangre/donacion.jpg');
+  background-image: url('../images/BancoSangre/donacion.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
