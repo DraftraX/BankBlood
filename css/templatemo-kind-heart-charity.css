@@ -782,7 +782,17 @@ strong {
 /*---------------------------------------
   NEWS         
 -----------------------------------------*/
-.news-detail-header-section {
+.community-activity-header-section {
+  background-image: url('../images/news/close-up-volunteer-oganizing-stuff-donation.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+.donation-detail-header-section{
   background-image: url('../images/news/close-up-volunteer-oganizing-stuff-donation.jpg');
   background-repeat: no-repeat;
   background-position: center;
