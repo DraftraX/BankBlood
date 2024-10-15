@@ -384,7 +384,7 @@ strong {
 .navbar-expand-lg .navbar-nav .nav-link {
   margin-right: 0;
   margin-left: 0;
-  padding: 20px;
+  padding: 10px;
 }
 
 .navbar-nav .nav-link {
@@ -570,8 +570,8 @@ strong {
 }
 
 #hero-slide .carousel-item {
-  height: 680px;
-  min-height: 680px;
+  height: 400px;
+  min-height: 400px;
 }
 
 #hero-slide .carousel-caption {
@@ -583,15 +583,15 @@ strong {
   right: 0;
   left: auto;
   text-align: right;
-  min-width: 680px;
-  min-height: 680px;
-  padding: 100px 100px 50px 100px;
+  min-width: 400px;
+  min-height: 400px;
+  padding: 100px 50px 1px 115px;
 }
 
 .carousel-image {
   display: block;
   width: 100%;
-  min-height: 680px;
+  min-height: 400px;
 }
 
 #hero-slide .carousel-indicators-wrap {
@@ -1671,3 +1671,7 @@ blockquote::before {
   }
 }
 
+.titulo-CH{
+  font-size: 70px;
+  font-weight: bold;
+}

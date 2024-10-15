@@ -16,14 +16,9 @@
 
         <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
 
+        <link rel="stylesheet" href="modal-noticia/modal-noticia.css">
+
         <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZoxpE_vRmUGmM9yoqhv1ztawS48q11Svuw&s">
-<!--
-
-TemplateMo 581 Kind Heart Charity
-f
-https://templatemo.com/tm-581-kind-heart-charity
-
--->
 
     </head>
     
@@ -145,13 +140,13 @@ https://templatemo.com/tm-581-kind-heart-charity
                         <li class="nav-item dropdown">
                             <a class="nav-link click-scroll dropdown-toggle"  id="eventosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactos</a>
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="eventosDropdown">
-                                <li><a class="dropdown-item" href="#section_4">Formulario de contactos</a></li>
+                                <li><a class="dropdown-item" href="contactanos.html">Formulario de contactos</a></li>
                                 <li><a class="dropdown-item" href="#bot">Redes sociales</a></li>
                             </ul>
                         </li>
                 
                         <li class="nav-item">
-                            <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donate</a>
+                            <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donar aqui</a>
                         </li>
                     </ul>
                 </div>
@@ -161,7 +156,62 @@ https://templatemo.com/tm-581-kind-heart-charity
 
         <main>
 
-            <section class="hero-section hero-section-full-height">
+            <section id="newsModal" class="modal-section">
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <div class="news-block">
+                        <div class="news-block-top">
+                            <a href="campañas-donacion.html">
+                                <img src="images/BancoSangre/pexels-photo-12193090.jpg" class="news-image img-fluid" alt="Campaña de Donación de Sangre en Loreto">
+                            </a>
+                            <div class="news-category-block">
+                                <a class="category-block-link">
+                                    Salud,
+                                </a>
+                                <a href="campañas-donacion.html" class="category-block-link">Campañas de donación</a>
+                            </div>
+                        </div>
+                        <div class="news-block-info">
+                            <div class="d-flex mt-2">
+                                <div class="news-block-date">
+                                    <p>
+                                        <i class="bi-calendar4 custom-icon me-1"></i>
+                                        12 de octubre, 2024
+                                    </p>
+                                </div>
+                                <div class="news-block-author mx-5">
+                                    <p>
+                                        <i class="bi-person custom-icon me-1"></i>
+                                        Por Banco de Sangre II Loreto
+                                    </p>
+                                </div>
+                                <div class="news-block-comment">
+                                    <p>
+                                        <i class="bi-chat-left custom-icon me-1"></i>
+                                        45 Comentarios
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="news-block-title mb-2">
+                                <h4><a href="campañas-donacion.html" class="news-block-title-link">Gran Campaña de Donación de Sangre en Loreto</a></h4>
+                            </div>
+                            <div class="news-block-body">
+                                <p>Participa en nuestra campaña regional de donación de sangre. ¡Tu apoyo puede salvar vidas! Estaremos presentes en varios puntos de la región de Loreto el 12 de octubre.</p>
+                            </div>
+                            <div class="news-block-body">
+                                <p>Participa en nuestra campaña regional de donación de sangre. ¡Tu apoyo puede salvar vidas! Estaremos presentes en varios puntos de la región de Loreto el 12 de octubre.</p>
+                            </div>
+                            <div class="news-block-body">
+                                <p>Participa en nuestra campaña regional de donación de sangre. ¡Tu apoyo puede salvar vidas! Estaremos presentes en varios puntos de la región de Loreto el 12 de octubre.</p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+
+            <section class="hero-section hero-section-auto">
                 <div class="container-fluid">
                     <div class="row">
 
@@ -216,12 +266,12 @@ https://templatemo.com/tm-581-kind-heart-charity
                     <div class="row">
             
                         <div class="col-lg-10 col-12 text-center mx-auto">
-                            <h2 class="mb-5">Centro Hemodador Regional Loreto BS Tipo II</h2>
+                            <h2 class="titulo-CH mb-5">Centro Hemodador Regional Loreto BS Tipo II</h2>
                         </div>
             
                         <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0">
                             <div class="featured-block d-flex justify-content-center align-items-center">
-                                <a href="donate.html" class="d-block">
+                                <a href="#section_4" class="d-block">
                                     <img src="images/icons/hands.png" class="featured-block-image img-fluid" alt="Voluntariado">
             
                                     <p class="featured-block-text">Conviértete en <strong>Voluntario</strong></p>
@@ -231,7 +281,7 @@ https://templatemo.com/tm-581-kind-heart-charity
             
                         <div class="col-lg-4 col-md-6 col-12 mb-4 mb-lg-0 mb-md-4">
                             <div class="featured-block d-flex justify-content-center align-items-center">
-                                <a href="donate.html" class="d-block">
+                                <a href="importancia-donar.html" class="d-block">
                                     <img src="images/icons/heart.png" class="featured-block-image img-fluid" alt="Cuidado de la Salud">
             
                                     <p class="featured-block-text"><strong>Cuidado</strong> de la Salud</p>
@@ -262,75 +312,6 @@ https://templatemo.com/tm-581-kind-heart-charity
                     </div>
                 </div>
             </section>
-            
-
-            <section class="section-padding section-bg" id="section_2">
-                <div class="container">
-                    <div class="row">
-            
-                        <div class="col-lg-6 col-12 mb-5 mb-lg-0">
-                            <img src="images/BancoSangre/logo.jpg" class="custom-text-box-image img-fluid" alt="Centro de Donación">
-                        </div>
-            
-                        <div class="col-lg-6 col-12">
-                            <div class="custom-text-box">
-                                <h2 class="mb-2">Nuestra Historia</h2>
-            
-                                <h5 class="mb-3">Banco de Sangre II de Loreto, Organización No Lucrativa</h5>
-            
-                                <p class="mb-0">Este es un sitio web para el Banco de Sangre II de Loreto, dedicado a garantizar la accesibilidad universal a unidades de sangre y hemoderivados de calidad, seguros y oportunos para toda la población loretana.</p>
-                            </div>
-                            
-                            <div class="row">
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="custom-text-box mb-lg-0">
-                                        <h5 class="mb-3">Nuestra Misión</h5>
-            
-                                        <p>Garantizar la accesibilidad a unidades de sangre y hemoderivados de calidad y seguros para la población de Loreto.</p>
-            
-                                        <ul class="custom-list mt-2">
-                                            <li class="custom-list-item d-flex">
-                                                <i class="bi-check custom-text-box-icon me-2"></i>
-                                                Promover la donación voluntaria de sangre
-                                            </li>
-            
-                                            <li class="custom-list-item d-flex">
-                                                <i class="bi-check custom-text-box-icon me-2"></i>
-                                                Implementar procesos de seguridad y calidad
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-            
-                                <div class="col-lg-6 col-md-6 col-12">
-                                    <div class="custom-text-box d-flex flex-wrap d-lg-block mb-lg-0">
-                                        <div class="counter-thumb"> 
-                                            <div class="d-flex">
-                                                <span class="counter-number" data-from="1" data-to="2030" data-speed="1000"></span>
-                                                <span class="counter-number-text"></span>
-                                            </div>
-            
-                                            <span class="counter-text">Año de Fundación</span>
-                                        </div> 
-            
-                                        <div class="counter-thumb mt-4"> 
-                                            <div class="d-flex">
-                                                <span class="counter-number" data-from="1" data-to="50" data-speed="1000"></span>
-                                                <span class="counter-number-text">K</span>
-                                            </div>
-            
-                                            <span class="counter-text">Donaciones realizadas</span>
-                                        </div> 
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            
-                    </div>
-                </div>
-            </section>
-            
-
 
             <section class="about-section section-padding">
                 <div class="container">
@@ -388,8 +369,6 @@ https://templatemo.com/tm-581-kind-heart-charity
                 </div>
             </section>
             
-
-
             <section class="section-padding" id="section_3">
                 <div class="container">
                     <div class="row">
@@ -551,122 +530,6 @@ https://templatemo.com/tm-581-kind-heart-charity
                     </div>
                 </div>
             </section>
-            
-            <section class="news-section section-padding" id="section_5">
-                <div class="container">
-                    <div class="row">
-            
-                        <div class="col-lg-12 col-12 mb-5">
-                            <h2>Últimas Noticias</h2>
-                        </div>
-            
-                        <div class="col-lg-7 col-12">
-                            <div class="news-block">
-                                <div class="news-block-top">
-                                    <a href="news-detail.html">
-                                        <img src="images/BancoSangre/pexels-photo-12193090.jpg" class="news-image img-fluid" alt="Campaña de Donación de Sangre en Loreto">
-                                    </a>
-            
-                                    <div class="news-category-block">
-                                        <a href="#" class="category-block-link">
-                                            Salud,
-                                        </a>
-            
-                                        <a href="#" class="category-block-link">
-                                            Donación de Sangre
-                                        </a>
-                                    </div>
-                                </div>
-            
-                                <div class="news-block-info">
-                                    <div class="d-flex mt-2">
-                                        <div class="news-block-date">
-                                            <p>
-                                                <i class="bi-calendar4 custom-icon me-1"></i>
-                                                12 de octubre, 2024
-                                            </p>
-                                        </div>
-            
-                                        <div class="news-block-author mx-5">
-                                            <p>
-                                                <i class="bi-person custom-icon me-1"></i>
-                                                Por Banco de Sangre II Loreto
-                                            </p>
-                                        </div>
-            
-                                        <div class="news-block-comment">
-                                            <p>
-                                                <i class="bi-chat-left custom-icon me-1"></i>
-                                                45 Comentarios
-                                            </p>
-                                        </div>
-                                    </div>
-            
-                                    <div class="news-block-title mb-2">
-                                        <h4><a href="news-detail.html" class="news-block-title-link">Gran Campaña de Donación de Sangre en Loreto</a></h4>
-                                    </div>
-            
-                                    <div class="news-block-body">
-                                        <p>Participa en nuestra campaña regional de donación de sangre. ¡Tu apoyo puede salvar vidas! Estaremos presentes en varios puntos de la región de Loreto el 12 de octubre.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="col-lg-5 col-12">
-                            <div class="news-block">
-                                <div class="news-block-top">
-                                    <a href="news-detail.html">
-                                        <img src="images/BancoSangre/dia de donar sangre.jpg" class="news-image img-fluid" alt="Día Mundial del Donante de Sangre">
-                                    </a>
-            
-                                    <div class="news-category-block">
-                                        <a href="#" class="category-block-link">
-                                            Eventos
-                                        </a>
-                                    </div>
-                                </div>
-            
-                                <div class="news-block-info">
-                                    <div class="d-flex mt-2">
-                                        <div class="news-block-date">
-                                            <p>
-                                                <i class="bi-calendar4 custom-icon me-1"></i>
-                                                14 de junio, 2024
-                                            </p>
-                                        </div>
-            
-                                        <div class="news-block-author mx-5">
-                                            <p>
-                                                <i class="bi-person custom-icon me-1"></i>
-                                                Por Banco de Sangre II Loreto
-                                            </p>
-                                        </div>
-            
-                                        <div class="news-block-comment">
-                                            <p>
-                                                <i class="bi-chat-left custom-icon me-1"></i>
-                                                68 Comentarios
-                                            </p>
-                                        </div>
-                                    </div>
-            
-                                    <div class="news-block-title mb-2">
-                                        <h4><a href="news-detail.html" class="news-block-title-link">Celebrando el Día Mundial del Donante de Sangre</a></h4>
-                                    </div>
-            
-                                    <div class="news-block-body">
-                                        <p>El 14 de junio es el Día Mundial del Donante de Sangre. Celebra con nosotros este día tan especial en nuestras instalaciones con eventos y campañas de concientización.</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-            
-                    </div>
-                </div>
-            </section>
-            
-
 
             <section class="testimonial-section section-padding section-bg">
                 <div class="container">
@@ -736,84 +599,6 @@ https://templatemo.com/tm-581-kind-heart-charity
                 </div>
             </section>
             
-
-
-            <section class="contact-section section-padding" id="section_6">
-                <div class="container">
-                    <div class="row">
-            
-                        <div class="col-lg-4 col-12 ms-auto mb-5 mb-lg-0">
-                            <div class="contact-info-wrap">
-                                <h2>Contáctanos</h2>
-            
-                                <div class="contact-image-wrap d-flex flex-wrap">
-                                    <img src="images/BancoSangre/Juan Peres Prueba.jpg" class="img-fluid avatar-image" alt="Encargado de Contacto">
-            
-                                    <div class="d-flex flex-column justify-content-center ms-3">
-                                        <p class="mb-0">Juan Pérez</p>
-                                        <p class="mb-0"><strong>Gerente de Recursos Humanos</strong></p>
-                                    </div>
-                                </div>
-            
-                                <div class="contact-info">
-                                    <h5 class="mb-3">Información de Contacto</h5>
-            
-                                    <p class="d-flex mb-2">
-                                        <i class="bi-geo-alt me-2"></i>
-                                        Av. Mariscal Castilla 200, Iquitos, Perú
-                                    </p>
-            
-                                    <p class="d-flex mb-2">
-                                        <i class="bi-telephone me-2 text-black"></i>
-                                    
-                                        <a href="tel:120-240-9600" style="color: black;">
-                                            (065) 123-4567
-                                        </a>
-                                    </p>
-                                    
-                                    <p class="d-flex">
-                                        <i class="bi-envelope me-2"></i>
-                                    
-                                        <a href="mailto:info@bancodesangreloreto.org" style="color: black;">
-                                            info@bancodesangreloreto.org
-                                        </a>
-                                    </p>
-                                    
-                                    <a href="#" class="custom-btn btn mt-3">Cómo llegar</a>
-                                </div>
-                            </div>
-                        </div>
-            
-                        <div class="col-lg-5 col-12 mx-auto">
-                            <form class="custom-form contact-form" action="#" method="post" role="form">
-                                <h2>Formulario de Contacto</h2>
-            
-                                <p class="mb-4">O también puedes enviarnos un correo a:
-                                    <a href="mailto:info@bancodesangreloreto.org">info@bancodesangreloreto.org</a>
-                                </p>
-                                <div class="row">
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" name="first-name" id="first-name" class="form-control" placeholder="Nombres" required>
-                                    </div>
-            
-                                    <div class="col-lg-6 col-md-6 col-12">
-                                        <input type="text" name="last-name" id="last-name" class="form-control" placeholder="Apellidos" required>
-                                    </div>
-                                </div>
-            
-                                <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" class="form-control" placeholder="tucorreo@gmail.com" required>
-            
-                                <textarea name="message" rows="5" class="form-control" id="message" placeholder="¿Cómo podemos ayudarte?"></textarea>
-            
-                                <button type="submit" class="form-control">Enviar Mensaje</button>
-                            </form>
-                        </div>
-            
-                    </div>
-                </div>
-            </section>
-            
-
         </main>
 
         <footer class="site-footer" id="bot">
@@ -903,7 +688,6 @@ https://templatemo.com/tm-581-kind-heart-charity
                 </div>
             </div>
         </footer>
-        
 
         <!-- JAVASCRIPT FILES -->
         <script src="js/jquery.min.js"></script>
@@ -912,6 +696,7 @@ https://templatemo.com/tm-581-kind-heart-charity
         <script src="js/click-scroll.js"></script>
         <script src="js/counter.js"></script>
         <script src="js/custom.js"></script>
+        <script src="modal-noticia/modal-noticia.js" ></script>
 
     </body>
 </html>

@@ -1,0 +1,113 @@
+/* Estilos para el modal */
+.modal-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro semi-transparente */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* Superponer sobre otros elementos */
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición suave */
+}
+
+.modal-section.show {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-content {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 600px; /* Tamaño más pequeño */
+    width: 90%; /* Adaptable a pantallas más pequeñas */
+    position: relative;
+    margin: 25px 0; /* Separación del borde superior */
+    transition: transform 0.3s ease-in-out; /* Animación de entrada */
+    max-height: 90vh; /* Limitar la altura máxima */
+    overflow-y: auto; /* Scroll automático */
+    scrollbar-width: none; /* Ocultar scrollbar en Firefox */
+}
+
+/* Ocultar scrollbar en navegadores Webkit (Chrome, Safari) */
+.modal-content::-webkit-scrollbar {
+    display: none;
+}
+
+/* Estilos para el botón de cerrar */
+.close {
+    position: absolute;
+    top: 10px; /* Un poco más cercano al borde superior */
+    right: 15px;
+    color: #aaa;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close:hover {
+    color: #ff0000;
+}
+
+/* Estilos de la imagen */
+.news-block-top img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.news-block-title-link {
+    color: #333;
+    text-decoration: none;
+}
+
+.news-block-title-link:hover {
+    text-decoration: underline;
+    color: #007bff;
+}
+
+.news-category-block a {
+    color: #ff6b6b;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.news-category-block a:hover {
+    text-decoration: underline;
+}
+
+.news-block-body {
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+    .modal-content {
+        width: 90%; /* Un poco más grande en pantallas pequeñas */
+        padding: 100px;
+    }
+
+    .close {
+        font-size: 24px; /* Ajustar tamaño del botón cerrar */
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-content {
+        width: 95%; /* Se adapta aún más en pantallas muy pequeñas */
+        padding: 15px;
+    }
+
+    .close {
+        font-size: 22px; /* Tamaño más pequeño del botón cerrar en pantallas pequeñas */
+    }
+}
