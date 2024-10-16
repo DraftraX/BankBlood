@@ -783,7 +783,7 @@ strong {
   NEWS         
 -----------------------------------------*/
 .community-activity-header-section {
-  background-image: url('../images/news/close-up-volunteer-oganizing-stuff-donation.jpg');
+  background-image: url('../images/news/close-up-happy-people-working-together.jpg');
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -801,6 +801,17 @@ strong {
   padding-top: 150px;
   padding-bottom: 150px;
 }
+
+.news-detail-header-section{
+  background-image: url('../images/news/medium-shot-people-collecting-foodstuff.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
 
 .news-block-top {
   border-radius: var(--border-radius-medium);
@@ -1287,14 +1298,14 @@ blockquote::before {
 -----------------------------------------*/
 .site-footer {
   background-color: white;
-  padding-top: 70px;
+  padding-top: 20px;
 }
 
 .site-footer-bottom {
   background-color: var(--primary-color);
   position: relative;
   z-index: 2;
-  margin-top: 70px;
+  margin-top: 10px;
   padding-top: 15px;
   padding-bottom: 10px;
 }
