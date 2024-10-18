@@ -571,15 +571,15 @@ bottom: -1px;
 right: 0;
 left: auto;
 text-align: right;
-min-width: 400px;
-min-height: 400px;
-padding: 100px 50px 1px 115px;
+min-width: 400;
+min-height: 400;
+padding: 50px 50px 1px 115px;
 }
 
 .carousel-image {
 display: block;
 width: 100%;
-min-height: 400px;
+min-height: 500px;
 }
 
 #hero-slide .carousel-indicators-wrap {
