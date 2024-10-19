@@ -17,6 +17,7 @@
         <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
 
         <link rel="icon" href="images/BancoSangre/logo.jpg">
+        <link rel="stylesheet" href="modal-noticia/modal-noticia.css">
 
     </head>
     
@@ -107,7 +108,7 @@
                             <a class="nav-link click-scroll dropdown-toggle"  id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="serviciosDropdown">
                                 <li><a class="dropdown-item" href="triaje.html">Triaje</a></li>
-                                <li><a class="dropdown-item" href="pre-triaje.html">Pre tamizaje</a></li>
+                                <li><a class="dropdown-item" href="pre-tamizaje.html">Pre tamizaje</a></li>
                                 <li><a class="dropdown-item" href="sensibilizacion.html">Sensibilización</a></li>
                                 <li><a class="dropdown-item" href="entrevista-médica.html">Entrevista médica</a></li>
                                 <li><a class="dropdown-item" href="entrevista-psicológica.html">Entrevista psicológica</a></li>
@@ -157,46 +158,54 @@
 
         <main>
             <section id="entrevista-psicologica" class="container my-5">
-                <h2 class="text-center">Entrevista Psicológica</h2>
-                <p class="text-center">Por favor, complete la siguiente información para ayudarnos a evaluar su idoneidad para donar sangre y asegurar su bienestar emocional.</p>
-                
-                <form>
-                    <div class="mb-3">
-                        <label for="nombre-psicologica" class="form-label">Nombre Completo</label>
-                        <input type="text" class="form-control" id="nombre-psicologica" required>
+                <div class="diseño-servicio">
+                    <div class="formulario">
+                        <h2 class="text-center">Entrevista Psicológica</h2>
+                        <p class="text-center">El área de Entrevista Psicológica está enfocada en brindar apoyo y orientación a los donantes voluntarios, asegurándose de que comprendan el proceso y se sientan cómodos. Esta etapa busca reforzar la confianza del donante antes de pasar a la sala de extracción, promoviendo una experiencia positiva.</p>
+                        
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre-psicologica" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre-psicologica" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="edad-psicologica" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="edad-psicologica" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono-psicologica" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono-psicologica" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="estado-animo" class="form-label">Estado de Ánimo Actual</label>
+                                <select class="form-select" id="estado-animo" required>
+                                    <option value="" disabled selected>Seleccione...</option>
+                                    <option value="feliz">Feliz</option>
+                                    <option value="triste">Triste</option>
+                                    <option value="ansioso">Ansioso</option>
+                                    <option value="neutral">Neutral</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="estres" class="form-label">¿Siente estrés actualmente? (sí/no)</label>
+                                <select class="form-select" id="estres" required>
+                                    <option value="" disabled selected>Seleccione...</option>
+                                    <option value="si">Sí</option>
+                                    <option value="no">No</option>
+                                </select>
+                            </div>
+                            <div class="mb-3">
+                                <label for="motivo" class="form-label">Motivo de la Consulta</label>
+                                <textarea class="form-control" id="motivo" rows="3" placeholder="Por favor, describa brevemente su situación..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="edad-psicologica" class="form-label">Edad</label>
-                        <input type="number" class="form-control" id="edad-psicologica" required>
+                    <div class="imagen-entrevista-seccion">
+                        <img class="imagen-formulario" src="images/BancoSangre/Servicios/5. Entrevista psicologica/IMG_0802.jpg">
+                        <img class="imagen-formulario" src="images/BancoSangre/Servicios/5. Entrevista psicologica/IMG_6832.jpg">
                     </div>
-                    <div class="mb-3">
-                        <label for="telefono-psicologica" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="telefono-psicologica" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="estado-animo" class="form-label">Estado de Ánimo Actual</label>
-                        <select class="form-select" id="estado-animo" required>
-                            <option value="" disabled selected>Seleccione...</option>
-                            <option value="feliz">Feliz</option>
-                            <option value="triste">Triste</option>
-                            <option value="ansioso">Ansioso</option>
-                            <option value="neutral">Neutral</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="estres" class="form-label">¿Siente estrés actualmente? (sí/no)</label>
-                        <select class="form-select" id="estres" required>
-                            <option value="" disabled selected>Seleccione...</option>
-                            <option value="si">Sí</option>
-                            <option value="no">No</option>
-                        </select>
-                    </div>
-                    <div class="mb-3">
-                        <label for="motivo" class="form-label">Motivo de la Consulta</label>
-                        <textarea class="form-control" id="motivo" rows="3" placeholder="Por favor, describa brevemente su situación..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar</button>
-                </form>
+                </div>
             </section>
         </main>
         

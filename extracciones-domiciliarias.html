@@ -11,12 +11,10 @@
 
       
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
         <link href="css/bootstrap-icons.css" rel="stylesheet">
-
         <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
-
         <link rel="icon" href="images/BancoSangre/logo.jpg">
+        <link rel="stylesheet" href="modal-noticia/modal-noticia.css">
 
     </head>
     
@@ -107,7 +105,7 @@
                             <a class="nav-link click-scroll dropdown-toggle"  id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="serviciosDropdown">
                                 <li><a class="dropdown-item" href="triaje.html">Triaje</a></li>
-                                <li><a class="dropdown-item" href="pre-triaje.html">Pre tamizaje</a></li>
+                                <li><a class="dropdown-item" href="pre-tamizaje.html">Pre tamizaje</a></li>
                                 <li><a class="dropdown-item" href="sensibilizacion.html">Sensibilización</a></li>
                                 <li><a class="dropdown-item" href="entrevista-médica.html">Entrevista médica</a></li>
                                 <li><a class="dropdown-item" href="entrevista-psicológica.html">Entrevista psicológica</a></li>
@@ -157,40 +155,48 @@
 
         <main>
             <section id="extracciones-domiciliarias" class="container my-5">
-                <h2 class="text-center">Extracciones Domiciliarias</h2>
-                <p class="text-center">Ofrecemos un servicio de extracción de sangre en la comodidad de su hogar. Complete el formulario para solicitar una cita.</p>
-                
-                <form>
-                    <div class="mb-3">
-                        <label for="nombre-domiciliaria" class="form-label">Nombre Completo</label>
-                        <input type="text" class="form-control" id="nombre-domiciliaria" required>
+                <div class="diseño-servicio">
+                    <div class="formulario">
+                        <h2 class="text-center">Extracciones Domiciliarias</h2>
+                        <p class="text-center">Ofrecemos un servicio de extracción de sangre en la comodidad de su hogar. Complete el formulario para solicitar una cita.</p>
+                        
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre-domiciliaria" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre-domiciliaria" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="edad-domiciliaria" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="edad-domiciliaria" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono-domiciliaria" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono-domiciliaria" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="direccion-domiciliaria" class="form-label">Dirección Completa</label>
+                                <input type="text" class="form-control" id="direccion-domiciliaria" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="fecha-domiciliaria" class="form-label">Fecha Preferida para la Extracción</label>
+                                <input type="date" class="form-control" id="fecha-domiciliaria" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="hora-domiciliaria" class="form-label">Hora Preferida</label>
+                                <input type="time" class="form-control" id="hora-domiciliaria" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="comentarios-domiciliaria" class="form-label">Comentarios Adicionales</label>
+                                <textarea class="form-control" id="comentarios-domiciliaria" rows="3" placeholder="Escriba cualquier detalle relevante..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Solicitar Extracción</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="edad-domiciliaria" class="form-label">Edad</label>
-                        <input type="number" class="form-control" id="edad-domiciliaria" required>
+                    <div class="imagen-entrevista-seccion">
+                        <img class="imagen-formulario" src="images/BancoSangre/Servicios/9. Extracción domiciliarias/IMG_0480-2.jpg">
+                        <img class="imagen-formulario" src="images/BancoSangre/Servicios/9. Extracción domiciliarias/IMG_0486-2.jpg">
                     </div>
-                    <div class="mb-3">
-                        <label for="telefono-domiciliaria" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="telefono-domiciliaria" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="direccion-domiciliaria" class="form-label">Dirección Completa</label>
-                        <input type="text" class="form-control" id="direccion-domiciliaria" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="fecha-domiciliaria" class="form-label">Fecha Preferida para la Extracción</label>
-                        <input type="date" class="form-control" id="fecha-domiciliaria" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="hora-domiciliaria" class="form-label">Hora Preferida</label>
-                        <input type="time" class="form-control" id="hora-domiciliaria" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="comentarios-domiciliaria" class="form-label">Comentarios Adicionales</label>
-                        <textarea class="form-control" id="comentarios-domiciliaria" rows="3" placeholder="Escriba cualquier detalle relevante..."></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Solicitar Extracción</button>
-                </form>
+                </div>
             </section>
         </main>
         

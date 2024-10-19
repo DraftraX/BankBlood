@@ -9,13 +9,10 @@
 
         <title>Loreto - Banco de Sangre Tipo II</title>
 
-      
+        <link rel="stylesheet" href="modal-noticia/modal-noticia.css">
         <link href="css/bootstrap.min.css" rel="stylesheet">
-
         <link href="css/bootstrap-icons.css" rel="stylesheet">
-
         <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
-
         <link rel="icon" href="images/BancoSangre/logo.jpg">
 
     </head>
@@ -107,7 +104,7 @@
                             <a class="nav-link click-scroll dropdown-toggle"  id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="serviciosDropdown">
                                 <li><a class="dropdown-item" href="triaje.html">Triaje</a></li>
-                                <li><a class="dropdown-item" href="pre-triaje.html">Pre tamizaje</a></li>
+                                <li><a class="dropdown-item" href="pre-tamizaje.html">Pre tamizaje</a></li>
                                 <li><a class="dropdown-item" href="sensibilizacion.html">Sensibilización</a></li>
                                 <li><a class="dropdown-item" href="entrevista-médica.html">Entrevista médica</a></li>
                                 <li><a class="dropdown-item" href="entrevista-psicológica.html">Entrevista psicológica</a></li>
@@ -157,28 +154,36 @@
 
         <main>
             <section id="sensibilizacion" class="container my-5">
-                <h2 class="text-center">Sensibilización</h2>
-                <p class="text-center">La sensibilización es clave para promover la donación de sangre y aumentar la conciencia sobre su importancia. Complete el formulario si desea más información sobre nuestras campañas y actividades.</p>
-                
-                <form>
-                    <div class="mb-3">
-                        <label for="nombre-sensibilizacion" class="form-label">Nombre Completo</label>
-                        <input type="text" class="form-control" id="nombre-sensibilizacion" required>
+                <div class="diseño-servicio">
+                    <div class="formulario">
+                        <h2 class="text-center">Sensibilización</h2>
+                        <p class="text-center">La sensibilización es clave para promover la donación de sangre y aumentar la conciencia sobre su importancia. Complete el formulario si desea más información sobre nuestras campañas y actividades.</p>
+                        
+                        <form>
+                            <div class="mb-3">
+                                <label for="nombre-sensibilizacion" class="form-label">Nombre Completo</label>
+                                <input type="text" class="form-control" id="nombre-sensibilizacion" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="edad-sensibilizacion" class="form-label">Edad</label>
+                                <input type="number" class="form-control" id="edad-sensibilizacion" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="telefono-sensibilizacion" class="form-label">Teléfono</label>
+                                <input type="tel" class="form-control" id="telefono-sensibilizacion" required>
+                            </div>
+                            <div class="mb-3">
+                                <label for="consulta-sensibilizacion" class="form-label">Consulta o Comentarios</label>
+                                <textarea class="form-control" id="consulta-sensibilizacion" rows="3" placeholder="Escriba sus preguntas o comentarios..." required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+                        </form>
                     </div>
-                    <div class="mb-3">
-                        <label for="edad-sensibilizacion" class="form-label">Edad</label>
-                        <input type="number" class="form-control" id="edad-sensibilizacion" required>
+                    <div class="imagen-entrevista-seccion">
+                        <img class="imagen-formulario" src="images/BancoSangre/Servicios/7. Sensibilización/24052024-WhatsApp Image 2024-05-24 at 12.08.34.jpg">
+                        <img class="imagen-formulario" src="images/BancoSangre/Servicios/7. Sensibilización/WhatsApp Image 2024-07-24 at 9.49.22 AM.jpg">
                     </div>
-                    <div class="mb-3">
-                        <label for="telefono-sensibilizacion" class="form-label">Teléfono</label>
-                        <input type="tel" class="form-control" id="telefono-sensibilizacion" required>
-                    </div>
-                    <div class="mb-3">
-                        <label for="consulta-sensibilizacion" class="form-label">Consulta o Comentarios</label>
-                        <textarea class="form-control" id="consulta-sensibilizacion" rows="3" placeholder="Escriba sus preguntas o comentarios..." required></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Enviar Consulta</button>
-                </form>
+                </div>
             </section>
         </main>
         

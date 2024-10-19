@@ -141,6 +141,12 @@
 
 /* imagen grupod e trabajo*/
 /* Imagenes con bordes redondeados */
+
+.imagen-ET{
+    border-radius: 40px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 .image-container {
     width: 150px;
     height: 150px;
@@ -517,4 +523,40 @@
     .horarios-section .card-body ul li {
         font-size: 0.9rem;
     }
+}
+
+/* Justificar texto */
+.texto-justificado {
+    text-align: justify;
+}
+
+/*Diseño del fomrulario*/
+
+.diseño-servicio{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+.imagen-formulario{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    border-radius: 10%;
+}
+.imagen-entrevista-seccion{
+    display: grid;
+    grid-template-columns: auto;
+}
+
+
+/*Equipo Trabajo*/
+.Equipo-45{
+    display: flex;
+    justify-content: space-around;
 }
