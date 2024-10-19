@@ -519,9 +519,10 @@ SITE HEADER
 -----------------------------------------*/
 .site-header {
 background: var(--primary-color);
-padding-top: 15px;
-padding-bottom: 10px;
+margin-top: 0;
+padding-top: 0;
 }
+
 
 .site-header p,
 .site-header p a,

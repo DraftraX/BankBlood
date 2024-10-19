@@ -1,9 +1,9 @@
 window.onload = function() {
     if (!sessionStorage.getItem('newsModalShown')) {
         var modal = document.getElementById('newsModal');
-        var closeBtn = document.getElementsByClassName('close')[0];
+        var closeBtn = document.getElementById('closeBtn');
 
-        modal.classList.add('show');  // Añadir clase para mostrar el modal
+        modal.classList.add('show');
 
         closeBtn.onclick = function() {
             modal.classList.remove('show');
@@ -18,3 +18,4 @@ window.onload = function() {
         };
     }
 };
+    

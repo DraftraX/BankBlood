@@ -16,11 +16,14 @@
 
         <link href="css/templatemo-kind-heart-charity.css" rel="stylesheet">
 
-        <link rel="icon" href="images/BancoSangre/logo.jpg">
+        <link rel="stylesheet" href="modal-noticia/modal-noticia.css">
+
+        <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRoZoxpE_vRmUGmM9yoqhv1ztawS48q11Svuw&s">
 
     </head>
     
-    <body id="section_1">
+    <body>
+
         <header class="site-header">
             <div class="container">
                 <div class="row">
@@ -78,11 +81,11 @@
                         <small>Loreto - Banco de Sangre Tipo II</small>
                     </span>
                 </a>
-        
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-        
+
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto">
                         <li class="nav-item dropdown">
@@ -103,7 +106,7 @@
                         </li>
                 
                         <li class="nav-item dropdown">
-                            <a class="nav-link click-scroll dropdown-toggle" id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
+                            <a class="nav-link click-scroll dropdown-toggle"  id="serviciosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Servicios</a>
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="serviciosDropdown">
                                 <li><a class="dropdown-item" href="triaje.html">Triaje</a></li>
                                 <li><a class="dropdown-item" href="pre-triaje.html">Pre tamizaje</a></li>
@@ -122,13 +125,13 @@
                             <a class="nav-link click-scroll dropdown-toggle" id="comoDonarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Cómo Donar</a>
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="comoDonarDropdown">
                                 <li><a class="dropdown-item" href="proceso-donar.html">Proceso de donación</a></li>
-                                <li><a class="dropdown-item" href="requisitos.html">Requisitos para donar</a></li>
+                                <li><a class="dropdown-item" href="requisitos.html  ">Requisitos para donar</a></li>
                                 <li><a class="dropdown-item" href="horarios-ubicaciones.html">Horarios y ubicaciones</a></li>
                             </ul>
                         </li>
                 
                         <li class="nav-item dropdown">
-                            <a class="nav-link click-scroll dropdown-toggle" id="eventosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eventos</a>
+                            <a class="nav-link click-scroll dropdown-toggle"  id="eventosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Eventos</a>
                             <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="eventosDropdown">
                                 <li><a class="dropdown-item" href="campañas-donacion.html">Campañas de donación</a></li>
                                 <li><a class="dropdown-item" href="actividades-comunitarias.html">Actividades comunitarias</a></li>
@@ -136,94 +139,52 @@
                         </li>
                 
                         <li class="nav-item dropdown">
-                            <a class="nav-link click-scroll dropdown-toggle" id="contactosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactos</a>
-                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="contactosDropdown">
+                            <a class="nav-link click-scroll dropdown-toggle"  id="eventosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Contactos</a>
+                            <ul class="dropdown-menu dropdown-menu-light" aria-labelledby="eventosDropdown">
                                 <li><a class="dropdown-item" href="contactanos.html">Contactos</a></li>
                                 <li><a class="dropdown-item" href="#bot">Redes sociales</a></li>
                             </ul>
                         </li>
                 
                         <li class="nav-item">
-                            <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donar aquí</a>
+                            <a class="nav-link custom-btn custom-border-btn btn" href="donate.html">Donar aqui</a>
                         </li>
                     </ul>
                 </div>
+                
             </div>
         </nav>
 
 
+
         <main>
-            <!-- Proceso de Donación Section -->
-            <section class="proceso-donacion-section pt-4">
-                <div class="container">
-                    <div class="row mb-4">
-                        <div class="col-lg-12 text-center">
-                            <h2 class="mb-4">Proceso de Donación de Sangre</h2>
-                            <p>Donar sangre es un proceso sencillo y seguro. Aquí te explicamos los pasos a seguir:</p>
-                        </div>
+            <section id="triaje" class="container my-5">
+                <h2 class="text-center">Triaje</h2>
+                <p class="text-center">El triaje es un procedimiento fundamental para evaluar la idoneidad de los donantes antes de la extracción de sangre. Complete el formulario para obtener más información sobre este proceso.</p>
+                
+                <form>
+                    <div class="mb-3">
+                        <label for="nombre-triaje" class="form-label">Nombre Completo</label>
+                        <input type="text" class="form-control" id="nombre-triaje" required>
                     </div>
-        
-                    <div class="row">
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title">1. Registro</h5>
-                                    <p class="card-text">Al llegar al centro de donación, te registrarán y te pedirán presentar un documento de identidad.</p>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title">2. Entrevista Médica</h5>
-                                    <p class="card-text">Un profesional de salud realizará una breve entrevista para asegurarse de que cumples con los requisitos para donar.</p>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title">3. Toma de Muestra</h5>
-                                    <p class="card-text">Se tomará una pequeña muestra de sangre para realizar pruebas de seguridad.</p>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title">4. Donación</h5>
-                                    <p class="card-text">El proceso de donación dura aproximadamente 10-15 minutos. Estarás en un ambiente cómodo y seguro.</p>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title">5. Recuperación</h5>
-                                    <p class="card-text">Después de donar, tendrás un tiempo de descanso y se te ofrecerán refrigerios para ayudar en tu recuperación.</p>
-                                </div>
-                            </div>
-                        </div>
-        
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-body">
-                                    <h5 class="card-title">6. Agradecimiento</h5>
-                                    <p class="card-text">Recibirás un agradecimiento por tu donación y una tarjeta que puedes usar para futuras donaciones.</p>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="mb-3">
+                        <label for="edad-triaje" class="form-label">Edad</label>
+                        <input type="number" class="form-control" id="edad-triaje" required>
                     </div>
-                </div>
+                    <div class="mb-3">
+                        <label for="telefono-triaje" class="form-label">Teléfono</label>
+                        <input type="tel" class="form-control" id="telefono-triaje" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="consulta-triaje" class="form-label">Consulta o Comentarios</label>
+                        <textarea class="form-control" id="consulta-triaje" rows="3" placeholder="Escriba sus preguntas o comentarios..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Consulta</button>
+                </form>
             </section>
         </main>
         
-        
-        
+
         <footer class="site-footer" id="bot">
             <div class="container">
                 <div class="row">

@@ -5,14 +5,14 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.85); /* Fondo oscuro semi-transparente */
+    background-color: rgba(0, 0, 0, 0.85);
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 1000; /* Superponer sobre otros elementos */
+    z-index: 1000;
     opacity: 0;
     visibility: hidden;
-    transition: opacity 0.3s ease, visibility 0.3s ease; /* Transición suave */
+    transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
 .modal-section.show {
@@ -22,38 +22,39 @@
 
 .modal-content {
     background-color: #fff;
-    padding-top: 5%;
     border-radius: 10px;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3);
-    max-width: 700px; /* Tamaño más pequeño */
-    width: 80%; /* Adaptable a pantallas más pequeñas */
+    max-width: 700px;
+    width: 80%;
+    padding: 20px;
     position: relative;
-    margin: 25px 0; /* Separación del borde superior */
-    transition: transform 0.3s ease-in-out; /* Animación de entrada */
-    max-height: 90vh; /* Limitar la altura máxima */
-    overflow-y: auto; /* Scroll automático */
-    scrollbar-width: none; /* Ocultar scrollbar en Firefox */
+    transition: transform 0.3s ease-in-out;
+    max-height: 90vh;
+    overflow-y: auto; /* Permitir scroll */
+    -ms-overflow-style: none;  /* Para Internet Explorer y Edge */
+    scrollbar-width: none;  /* Para Firefox */
 }
 
-/* Ocultar scrollbar en navegadores Webkit (Chrome, Safari) */
 .modal-content::-webkit-scrollbar {
-    display: none;
+    display: none; /* Ocultar scrollbar en Chrome, Safari y Opera */
 }
 
-/* Estilos para el botón de cerrar */
-.close {
-    position: absolute;
-    top: 5px; /* Un poco más cercano al borde superior */
-    right: 15px;
-    color: #aaa;
-    font-size: 70px;
-    font-weight: bold;
+.modal-close {
+    text-align: right; /* Mover el botón de cerrar a la derecha */
+    margin-top: 20px;
+}
+
+.close-btn {
+    background-color: #ff0000;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
     cursor: pointer;
-    transition: color 0.3s ease;
 }
 
-.close:hover {
-    color: #ff0000;
+.close-btn:hover {
+    background-color: #cc0000;
 }
 
 /* Estilos de la imagen */
@@ -63,54 +64,31 @@
     border-radius: 8px;
 }
 
-.news-block-title-link {
-    color: #333;
-    text-decoration: none;
-}
-
-.news-block-title-link:hover {
-    text-decoration: underline;
-    color: #007bff;
-}
-
-.news-category-block a {
-    color: #ff6b6b;
-    text-transform: uppercase;
-    font-weight: bold;
-    text-decoration: none;
-}
-
-.news-category-block a:hover {
-    text-decoration: underline;
-}
-
-.news-block-body {
-    color: #555;
-    line-height: 1.6;
-}
-
 /* Responsividad */
 @media (max-width: 768px) {
     .modal-content {
-        width: 90%; /* Un poco más grande en pantallas pequeñas */
-        padding: 100px;
+        width: 90%;
     }
 
-    .close {
-        font-size: 24px; /* Ajustar tamaño del botón cerrar */
+    .close-btn {
+        font-size: 16px;
+        padding: 8px 16px;
     }
 }
 
 @media (max-width: 480px) {
     .modal-content {
-        width: 95%; /* Se adapta aún más en pantallas muy pequeñas */
-        padding: 15px;
+        width: 95%;
     }
-
-    .close {
-        font-size: 22px; /* Tamaño más pequeño del botón cerrar en pantallas pequeñas */
+    
+    .close-btn {
+        font-size: 14px;
+        padding: 6px 12px;
     }
 }
+
+
+/*video presentacion*/
 .video-presentation {
     position: relative;
     padding-bottom: 56.25%;
@@ -145,21 +123,13 @@
     }
 }
 
-.te-informa {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    padding: 20px;
-    background-image: url("../images/BancoSangre/textura (1).jpg");
-    background-size: cover;
-    border-radius: 5px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-}
 
 .te-informa h2 {
     margin: 0;
-    padding: 10px 20px;
+    padding: 10px 21px;
+    background-image: url("../images/BancoSangre/textura (1).jpg");
+    border-radius: 5px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     color: white;
     letter-spacing: 2px;
     border-radius: 5px;
@@ -227,4 +197,324 @@
         font-size: 0.95rem;
     }
 }
+
+/*SOBRE NOSOTROS*/
+/* Estilos personalizados para la sección Misión, Visión, Valores */
+.card {
+    border-radius: 15px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #6c757d;
+}
+
+.icon {
+    background-color: rgba(0, 0, 0, 0.05);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px;
+}
+
+.icon i {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+/* Ajustes de colores */
+.bi-droplet-fill {
+    color: #ff4d4d;
+}
+
+.bi-eye-fill {
+    color: #1e90ff;
+}
+
+.bi-heart-fill {
+    color: #28a745;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/*NUESTRA HISTORIA*/
+/* Sección de historia */
+.about-section {
+    padding: 60px 0;
+    background-color: #fdf0f1; /* Fondo rojo claro */
+}
+
+.about-section h2, .about-section h3 {
+    font-weight: 600;
+    color: #b71c1c; /* Rojo fuerte */
+}
+
+.about-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #6c757d;
+}
+
+.about-section img {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+    border: 5px solid #e57373; /* Borde rojo suave */
+}
+
+.about-section img:hover {
+    transform: scale(1.05);
+}
+
+.position-absolute.small {
+    font-size: 0.875rem;
+    background-color: #b71c1c; /* Fondo rojo fuerte */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+/* Estilos para la línea de tiempo */
+.timeline {
+    position: relative;
+    margin-top: 30px;
+    padding-left: 40px;
+}
+
+.timeline-item {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.timeline-icon {
+    position: absolute;
+    left: -25px;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    background-color: #b71c1c; /* Rojo fuerte */
+    border-radius: 50%;
+}
+
+.timeline-title {
+    font-weight: bold;
+    font-size: 1.1rem;
+    margin-bottom: 5px;
+    color: #e53935; /* Rojo llamativo */
+}
+
+.timeline-text {
+    font-size: 0.95rem;
+    color: #6c757d;
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .timeline {
+        padding-left: 0;
+    }
+
+    .timeline-item {
+        padding-left: 0;
+    }
+
+    .timeline-icon {
+        left: 0;
+    }
+}
+
+/*IMPORTANCIA DE DONAR*/
+/* Sección de importancia de donar sangre */
+.importance-section {
+    padding: 60px 0;
+    background-color: #fdf0f1; /* Fondo rojo claro */
+}
+
+.importance-section h2, 
+.importance-section h3 {
+    font-weight: 600;
+    color: #b71c1c; /* Rojo fuerte para los títulos */
+}
+
+.importance-section p {
+    font-size: 1rem;
+    line-height: 1.7;
+    color: #6c757d;
+}
+
+.importance-section img {
+    max-height: 100%; 
+    object-fit: cover;
+    width: 100%;
+    border-radius: 15px;
+    border: 5px solid #e53935; /* Borde rojo */
+}
+
+.importance-section .position-relative {
+    height: 100%; 
+    overflow: hidden;
+}
+
+.importance-section img:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+.position-absolute.small {
+    font-size: 0.875rem;
+    background-color: #b71c1c; /* Fondo rojo para el texto sobre la imagen */
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.benefits-list ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.benefits-list li {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+.benefits-list i {
+    margin-right: 8px;
+    font-size: 1.2rem;
+    color: #b71c1c; /* Color rojo para los íconos */
+}
+
+/* Para pantallas más pequeñas */
+@media (max-width: 768px) {
+    .importance-section {
+        padding: 40px 0;
+    }
     
+    .importance-section .position-relative {
+        max-height: 300px; 
+    }
+
+    .importance-section img {
+        max-height: 300px; 
+    }
+}
+.requisitos-section {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+}
+
+.requisitos-section h2 {
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.requisitos-section p.lead {
+    color: #6c757d;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-title {
+    font-weight: 600;
+    color: #dc3545;
+}
+
+.list-unstyled li {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    margin-bottom: 10px;
+    color: #6c757d;
+}
+
+.bi {
+    font-size: 1.5rem;
+}
+
+/* Iconos en color verde */
+.bi-check-circle-fill {
+    color: #28a745;
+}
+
+/* Para pantallas pequeñas */
+@media (max-width: 768px) {
+    .requisitos-section {
+        padding: 40px 0;
+    }
+}
+
+.horarios-section h2, 
+.horarios-section h3 {
+    color: #dc3545; /* Rojo representativo */
+    font-weight: bold;
+}
+
+.horarios-section .card {
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.horarios-section .card:hover {
+    transform: scale(1.05);
+}
+
+.horarios-section .card-body h5 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #dc3545;
+}
+
+.horarios-section .card-body ul {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+.horarios-section .card-body ul li {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 8px;
+}
+
+.horarios-section .card-body ul li i {
+    margin-right: 5px;
+    color: #dc3545;
+}
+
+/* Mapa */
+#map-container {
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .horarios-section .card-body ul li {
+        font-size: 0.9rem;
+    }
+}
