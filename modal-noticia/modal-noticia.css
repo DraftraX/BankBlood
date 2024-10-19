@@ -532,28 +532,54 @@
 
 /*Diseño del fomrulario*/
 
-.diseño-servicio{
+/* Diseño base para pantallas grandes */
+.diseño-servicio {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
     width: 100%;
     height: auto;
 }
-.imagen-formulario{
-    height: 100%;
+
+/* Ajustes para las imágenes dentro del formulario */
+.imagen-formulario {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100%;
     padding: 20px;
     border-radius: 10%;
 }
-.imagen-entrevista-seccion{
+
+.imagen-entrevista-seccion {
     display: grid;
     grid-template-columns: auto;
 }
 
+/* Media queries para pantallas medianas */
+@media (max-width: 992px) {
+    .diseño-servicio {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .imagen-formulario {
+        padding: 15px;
+    }
+}
+
+/* Media queries para pantallas pequeñas (móviles) */
+@media (max-width: 576px) {
+    .diseño-servicio {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .imagen-formulario {
+        padding: 10px;
+        border-radius: 5%;
+    }
+}
 
 /*Equipo Trabajo*/
 .Equipo-45{
