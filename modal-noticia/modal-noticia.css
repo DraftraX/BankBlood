@@ -552,8 +552,13 @@
 }
 
 .imagen-entrevista-seccion {
-    display: grid;
-    grid-template-columns: auto;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 10%;
 }
 
 /* Media queries para pantallas medianas */
