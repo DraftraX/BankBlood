@@ -520,7 +520,9 @@ SITE HEADER
 .site-header {
 background: var(--primary-color);
 margin-top: 0;
-padding-top: 0;
+padding-top: 15px;
+height: 50px;
+
 }
 
 
