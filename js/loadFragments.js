@@ -1,12 +1,30 @@
-// js/loadFragments.js
 async function loadFragment(fragmentId, filePath) {
-    const response = await fetch(filePath);
-    const content = await response.text();
-    document.getElementById(fragmentId).innerHTML = content;
+    try {
+        // Verificar si el fragmento ya está en localStorage
+        const cachedContent = localStorage.getItem(filePath);
+        if (cachedContent) {
+            document.getElementById(fragmentId).innerHTML = cachedContent;
+            return; // Salir si se encuentra en la caché
+        }
+
+        // Si no está en caché, realizar la solicitud al servidor
+        const response = await fetch(filePath);
+        if (!response.ok) throw new Error(`Error loading ${filePath}`);
+        const content = await response.text();
+
+        // Insertar contenido y almacenarlo en localStorage
+        document.getElementById(fragmentId).innerHTML = content;
+        localStorage.setItem(filePath, content); // Guardar en caché
+    } catch (error) {
+        console.error(error);
+    }
 }
 
-// Cargar los fragmentos al inicio
+// Cargar fragmentos en paralelo
 document.addEventListener("DOMContentLoaded", () => {
-    loadFragment("navbar", "fragments/nav.html");
-    loadFragment("footer", "fragments/footer.html");
+    Promise.all([
+        loadFragment("navbar", "fragments/nav.html"),
+        loadFragment("footer", "fragments/footer.html")
+    ]).catch(console.error);
 });
+
