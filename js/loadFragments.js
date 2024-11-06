@@ -23,8 +23,8 @@ async function loadFragment(fragmentId, filePath) {
 // Cargar fragmentos en paralelo
 document.addEventListener("DOMContentLoaded", () => {
     Promise.all([
-        loadFragment("navbar", "fragments/nav.html"),
-        loadFragment("footer", "fragments/footer.html")
+        loadFragment("navbar", "../fragments/nav.html"),
+        loadFragment("footer", "../fragments/footer.html")
     ]).catch(console.error);
 });
 

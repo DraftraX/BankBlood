@@ -591,3 +591,25 @@
     display: flex;
     justify-content: space-around;
 }
+
+/* Estilos para la sección valores y compromisos*/  
+.valores-compromisos{
+    display: grid;
+    grid-column: 1fr 1fr;
+}
+
+.lista-valores {
+    text-align: left; /* Alinea el contenido a la izquierda */
+}
+
+.lista-valores ul {
+    column-count: 2; /* Divide en dos columnas */
+    column-gap: 1rem; /* Espacio entre las columnas */
+    padding: 0;
+    margin: 0;
+    list-style-position: inside; /* Ajusta las viñetas para estar dentro */
+}
+
+.lista-valores ul li {
+    margin-bottom: 0.5rem;
+}
