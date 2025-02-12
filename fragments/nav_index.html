@@ -1,5 +1,5 @@
 <!-- templates/fragments/nav.html -->
-<div th:fragment="navbar">
+<div th:fragment="navbar_index">
     <header class="site-header">
         <div class="container">
             <div class="row">
@@ -19,8 +19,19 @@
                     
                 <div class="col-lg-3 col-12 ms-auto d-lg-block d-none">
                     <ul class="social-icon">
-                        
-                        
+                        <li class="social-icon-item audio-container">
+                            <a 
+                                id="music-btn"
+                                class="social-icon-link bi bi-play-fill"
+                                title="Reproducir/Detener música"
+                                aria-label="Botón de control de audio"
+                                href="javascript:void(0)">
+                            </a>
+                            <audio id="welcome-audio">
+                                <source src="archivos-extra/ES TIEMPO DE DONAR - HEMODADOR.mp3" type="audio/mpeg">
+                                Tu navegador no soporta el elemento de audio.
+                            </audio>
+                        </li>
                         
                         <li class="social-icon-item">
                             <a href="#" class="social-icon-link bi-twitter"></a>
