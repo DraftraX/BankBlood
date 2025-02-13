@@ -23,6 +23,7 @@ async function loadFragment(fragmentId, filePath) {
 document.addEventListener("DOMContentLoaded", () => {
     Promise.all([
         loadFragment("navbar", "../fragments/nav.html"),
+        loadFragment("navbar_index", "../fragments/nav_index.html"),
         loadFragment("footer", "../fragments/footer.html"),
         loadFragment("social-bar", "../fragments/redesSociales.html") 
     ])
@@ -38,17 +39,25 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
         // Alternar entre reproducir y detener audio al hacer clic
+        function removeClasses(element, classes) {
+            classes.split(' ').forEach(cls => element.classList.remove(cls));
+        }
+        
+        function addClasses(element, classes) {
+            classes.split(' ').forEach(cls => element.classList.add(cls));
+        }
+        
         musicBtn.addEventListener('click', function () {
             if (audio.paused) {
                 audio.play().catch(function(error) {
                     console.log("El audio no se pudo reproducir: ", error);
                 });
-                musicBtn.classList.remove('bi-volume-up-fill');
-                musicBtn.classList.add('bi-volume-mute-fill'); // Cambio de ícono a mute
+                removeClasses(musicBtn, 'bi bi-play-fill');
+                addClasses(musicBtn, 'bi bi-pause-fill'); // Cambio de ícono a mute
             } else {
                 audio.pause();
-                musicBtn.classList.remove('bi-volume-mute-fill');
-                musicBtn.classList.add('bi-volume-up-fill'); // Cambio de ícono a play
+                removeClasses(musicBtn, 'bi bi-pause-fill');
+                addClasses(musicBtn, 'bi bi-play-fill'); // Cambio de ícono a play
             }
         });
     })
